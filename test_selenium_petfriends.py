@@ -79,7 +79,7 @@ def test_show_my_pets():
  
    age_my_pets = pytest.driver.find_elements_by_xpath('//tbody/tr/td[3]')
 
-00:30
+
 for i in range(len(age_my_pets)):
       assert wait.until(EC.visibility_of(age_my_pets[i]))
 
