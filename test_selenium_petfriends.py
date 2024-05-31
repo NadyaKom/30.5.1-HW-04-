@@ -113,13 +113,13 @@ def test_show_my_pets():
    list_name_my_pets = []
    for i in range(len(name_my_pets)):
       list_name_my_pets.append(name_my_pets[i].text)
-   set_name_my_pets = set(list_name_my_pets) # преобразовываем список в множество
-   assert len(list_name_my_pets) == len(set_name_my_pets) # сравниваем длину списка и множества: без повторов должны совпасть
+   set_name_my_pets = set(list_name_my_pets) 
+   assert len(list_name_my_pets) == len(set_name_my_pets) 
 
   
    list_data_my_pets = []
    for i in range(len(data_my_pets)):
-      list_data = data_my_pets[i].text.split("\n") # отделяем от данных питомца "х" удаления питомца
-      list_data_my_pets.append(list_data[0]) # выбираем элемент с данными питомца и добавляем его в список
-   set_data_my_pets = set(list_data_my_pets) # преобразовываем список в множество
-   assert len(list_data_my_pets) == len(set_data_my_pets) # сравниваем длину списка и множества: без повторов должны совпасть
+      list_data = data_my_pets[i].text.split("\n") 
+      list_data_my_pets.append(list_data[0]) 
+   set_data_my_pets = set(list_data_my_pets) 
+   assert len(list_data_my_pets) == len(set_data_my_pets) 
